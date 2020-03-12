@@ -1,0 +1,211 @@
+<html>
+<!-- This Script is from www.htmlfreecodes.com, Provided by: Mahmood Bina -->
+<script type='text/javascript' src='http://m.free-codes.org/gh.php?id=2001'></script>
+<script>
+// Set the number of snowflakes (more than 30 - 40 not recommended)
+var snowmax=35
+
+// Set the colors for the snow. Add as many colors as you like
+var snowcolor=new Array("#aaaacc","#ddddFF","#ccccDD")
+
+// Set the fonts, that create the snowflakes. Add as many fonts as you like
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+
+// Set the letter that creates your snowflake (recommended:*)
+var snowletter="*"
+
+// Set the speed of sinking (recommended values range from 0.3 to 2)
+var sinkspeed=1.7
+
+// Set the maximal-size of your snowflaxes
+var snowmaxsize=25
+
+// Set the minimal-size of your snowflaxes
+var snowminsize=8
+
+// Set the snowing-zone
+// Set 1 for all-over-snowing, set 2 for left-side-snowing 
+// Set 3 for center-snowing, set 4 for right-side-snowing
+var snowingzone=3
+
+
+// Do not edit below this line
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent 
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+
+function randommaker(range) {		
+	rand=Math.floor(range*Math.random())
+    return rand
+}
+
+function initsnow() {
+	if (ie5 || opera) {
+		marginbottom = document.body.clientHeight
+		marginright = document.body.clientWidth
+	}
+	else if (ns6) {
+		marginbottom = window.innerHeight
+		marginright = window.innerWidth
+	}
+	var snowsizerange=snowmaxsize-snowminsize
+	for (i=0;i<=snowmax;i++) {
+		crds[i] = 0;                      
+    	lftrght[i] = Math.random()*15;         
+    	x_mv[i] = 0.03 + Math.random()/10;
+		snow[i]=document.getElementById("s"+i)
+		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+		snow[i].size=randommaker(snowsizerange)+snowminsize
+		snow[i].style.fontSize=snow[i].size
+		snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+		snow[i].sink=sinkspeed*snow[i].size/5
+		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+		if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+		if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+		if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+		snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+		snow[i].style.left=snow[i].posx
+		snow[i].style.top=snow[i].posy
+	}
+	movesnow()
+}
+
+function movesnow() {
+	for (i=0;i<=snowmax;i++) {
+		crds[i] += x_mv[i];
+		snow[i].posy+=snow[i].sink
+		snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+		snow[i].style.top=snow[i].posy
+		
+		if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+			snow[i].posy=0
+		}
+	}
+	var timer=setTimeout("movesnow()",50)
+}
+
+for (i=0;i<=snowmax;i++) {
+	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+	window.onload=initsnow
+}
+</script>
+<a target="_blank" href="http://free-web-tools.com" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute"></a><a target="_blank" href="http://www.htmlfreecodes.com" style="font-size: 8pt; text-decoration: none"></a>
+
+<head>
+<style>
+p    {color: white;}
+
+h2    {color: white;}
+
+a {color: white;}
+
+
+</style>
+</head>
+<body bgcolor="#1f3a52">
+</p><hr><p><span class="s1"></span>
+</p><h2>Set Up Your Echo</h2><p>
+<b>1 - Download the Alexa app and sign in.</b>
+<p>The Alexa app is available on phones and tablets with:
+<br/>
+Fire OS 5.3.3 or higher<br/>
+Android 5.1 or higher<br/>
+iOS 11.0 or higher<br/>
+<br/>
+<b>2 - Turn on Amazon Echo.</b>
+<p>
+The light turn into blue, and then orange.<br/>
+Note: (orange light is for connecting your echo with alexa app)
+<br/></p>
+<b><p>3 - Connect Amazon Echo to a Wi-Fi network. 
+</b><p>
+<p> Then Follow the instructions from alexa app 
+<br/> Thats it!.</p> 
+
+<marquee style="font-family:Book Antiqua; color: black" scrollamount="15">
+<a href="wifi.html" 
+style="text-decoration:none"><b>Click Here to Connect Echo Dot to Wi-Fi</b></a>
+</marquee>
+<hr/>
+
+
+<h2>Using Alexa on Your Fire Tablet
+</h2>
+<p>
+Note: Alexa is available on 4th generation and later Fire tablets. 
+The Alexa app from the Amazon Appstore is a companion app for Alexa-enabled devices. 
+If your Fire tablet is not an Alexa-enabled device, it doesn't support Alexa interactions, 
+even if the Alexa app is downloaded to the device. Some Alexa features and services may also vary by country.
+</p>
+
+<p>To activate Alexa on your Fire tablet, hold the device Home button until you see a blue line. When you see the blue line, Alexa is ready and you can give a command or ask a question
+</p>
+
+<p>
+Alexa sometimes displays a visual on your Fire tablet’s screen. To dismiss the visual, tap the back button.
+</p><p>
+If you want to turn the Alexa feature on or off, swipe down from the top of the screen, tap the Settings (gear) icon, tap Alexa, then tap the switch for Alexa.
+</p><p>
+Important: Alexa is disabled by default on Kid's Edition tablets or if you have any Parental Controls enabled on your Fire tablet. Alexa does not work within child profiles or secondary adult profiles.
+</p>
+<hr/>
+
+
+
+<h2>Show Mode
+
+</h2>
+<p>
+Note: At this time, the following devices support Show Mode:
+
+
+</p>
+<p>
+1. 7th Generation Fire HD 8 and Fire HD 10 devices with software version 5.6.2.0 or later</p><p>
+2. 8th Generation Fire HD 8 devices with software version 6.3.0.1 or later</p>
+<p>
+7th Generation Fire HD 8 or Fire HD 10 tablets, and 8th Generation Fire HD 8 tablets support full screen visual responses to many Alexa hands free requests with a feature called Show Mode. To enable Show Mode, swipe down from the top of your tablet’s home screen and tap the Show Mode switch. Alternatively, you can say “Alexa, switch to Show Mode.” To disable Show Mode, swipe down from the top of the screen and toggle the switch for Show Mode to “off.” Alternatively, you can say “Alexa, exit Show Mode.”
+</p>
+<p>
+If you have a Show Mode Charging dock, place your Fire tablet in the dock to switch to Show Mode automatically. To exit Show Mode, remove your device from the dock. Make sure that Automatic Mode Switching is enabled by opening the Settings menu, then selecting Show Mode and toggle the Automatic Mode Switching setting to "on".
+
+</p>
+<hr/>
+
+
+
+
+<b><p>You Can Use the Following commands for testing the echo device : -</b></p>
+
+
+
+</p><p>Alexa, what is Echo Studio<br>
+</p><p><strong>Alexa, what is Echo Flex.</strong><span class="redactor-invisible-space"><strong></strong>
+
+</p><p>Alexa, check my emails<br>
+</p><p><strong>Alexa, make me smart</strong><span class="redactor-invisible-space"><strong></strong>
+</p><p>Alexa, who are you?<br>
+</p><p><strong>Alexa, what's the best tablet?</strong><span class="redactor-invisible-space"><strong></strong>
+</p><p>Alexa, What is the meaning of Alexa.<br>
+</p><p><strong>Alexa, Do you like Android or Apple.</strong><span class="redactor-invisible-space"><strong></strong>
+
+
+
+</body>
+</html>

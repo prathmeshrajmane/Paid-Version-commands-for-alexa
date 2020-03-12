@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+
+    android:layout_height="fill_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:background="#ffffff"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context="com.met.teja.tejasexpress.MainActivity">
+
+
+        <ImageButton
+
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/wifi" />
+
+        <TextView
+            android:id="@+id/tvText1"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/button4"
+            android:layout_alignLeft="@+id/button4"
+            android:layout_alignRight="@+id/button4"
+            android:layout_alignStart="@+id/button4"
+            android:layout_below="@+id/button4"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Games | Games | Games"
+            android:textColor="#000000" />
+
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/button3"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:onClick="six"
+            android:src="@drawable/games" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bbs" />
+
+        <TextView
+
+            android:id="@+id/tvText4"
+
+            android:layout_width="144dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/tvText2"
+            android:layout_alignEnd="@+id/button2"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignRight="@+id/button2"
+            android:layout_alignStart="@+id/button2"
+            android:layout_alignTop="@+id/tvText2"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Setup Echo | Setup Echo"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText16"
+            android:layout_width="99dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/tvText3"
+            android:layout_alignBottom="@+id/tvText3"
+            android:layout_alignEnd="@+id/button9"
+            android:layout_alignLeft="@+id/button9"
+            android:layout_alignRight="@+id/button9"
+            android:layout_alignStart="@+id/button9"
+            android:layout_marginEnd="-10dp"
+            android:layout_marginRight="-10dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Coronavirus | Coronavirus | Coronavirus"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText2"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/tvText1"
+            android:layout_alignBottom="@+id/tvText1"
+            android:layout_alignEnd="@+id/button3"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_alignRight="@+id/button3"
+            android:layout_alignStart="@+id/button3"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Basic Commands | Basic Commands"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText3"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/button7"
+            android:layout_alignLeft="@+id/button7"
+            android:layout_alignRight="@+id/button7"
+            android:layout_alignStart="@+id/button7"
+            android:layout_below="@+id/button7"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Funny 2018 | Funny 2018 | Funny 2018"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:id="@+id/tvText5"
+            android:layout_width="102dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/tvText16"
+            android:layout_alignBottom="@+id/tvText16"
+            android:layout_alignEnd="@+id/button8"
+            android:layout_alignLeft="@+id/button8"
+            android:layout_alignRight="@+id/button8"
+            android:layout_alignStart="@+id/button8"
+            android:layout_marginEnd="-13dp"
+            android:layout_marginRight="-13dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Music | Music | Music"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/tvText16"
+            android:layout_alignEnd="@+id/button8"
+            android:layout_alignLeft="@+id/button8"
+            android:layout_alignRight="@+id/button8"
+            android:layout_alignStart="@+id/button8"
+            android:layout_below="@+id/tvText5"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Weather | Weather | Weather"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText9"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/button10"
+            android:layout_alignLeft="@+id/button10"
+            android:layout_alignRight="@+id/button10"
+            android:layout_alignStart="@+id/button10"
+            android:layout_below="@+id/button10"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Meditation | Meditation | Meditation"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText15"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/tvText9"
+            android:layout_alignBottom="@+id/tvText9"
+            android:layout_alignEnd="@+id/button8"
+            android:layout_alignLeft="@+id/button8"
+            android:layout_alignRight="@+id/button8"
+            android:layout_alignStart="@+id/button8"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Apps | Apps | Apps"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText22"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/button11"
+            android:layout_alignLeft="@+id/button8"
+            android:layout_alignRight="@+id/button11"
+            android:layout_alignStart="@+id/button8"
+            android:layout_below="@+id/button12"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Easter Eggs | Easter Eggs "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText10"
+            android:layout_width="106dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/button2"
+            android:layout_below="@+id/button28"
+
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Kitchen Helper | Kitchen Helper"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/button9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/button6"
+            android:layout_alignStart="@+id/button6"
+            android:layout_alignTop="@+id/button8"
+            android:src="@drawable/season" />
+
+        <ImageButton
+            android:id="@+id/button10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/tvText3"
+            android:layout_alignStart="@+id/tvText3"
+            android:layout_alignTop="@+id/button9"
+            android:src="@drawable/med" />
+
+        <TextView
+            android:id="@+id/tvText18"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/tvText9"
+            android:layout_alignBottom="@+id/tvText9"
+            android:layout_alignEnd="@+id/button9"
+            android:layout_alignLeft="@+id/button9"
+            android:layout_alignRight="@+id/button9"
+            android:layout_alignStart="@+id/button9"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="TV Shows | TV Shows"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText21"
+            android:layout_width="103dp"
+            android:layout_height="21dp"
+            android:layout_alignStart="@+id/tvText1"
+            android:layout_alignTop="@+id/tvText22"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="christmas special | christmas special"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText20"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button12"
+            android:layout_alignLeft="@+id/button12"
+            android:layout_alignRight="@+id/button12"
+            android:layout_alignStart="@+id/button12"
+            android:layout_below="@+id/button12"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="1dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Facts | Facts | Facts"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/button6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/tvText2"
+            android:layout_alignStart="@+id/tvText2"
+            android:layout_below="@+id/tvText2"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/coro" />
+
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/tvText4"
+            android:layout_alignStart="@+id/tvText4"
+            android:layout_alignTop="@+id/button6"
+            android:src="@drawable/mm" />
+
+        <ImageButton
+
+            android:id="@+id/button7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/tvText1"
+            android:layout_alignStart="@+id/tvText1"
+            android:layout_alignTop="@+id/button6"
+            android:src="@drawable/jj" />
+
+        <ImageButton
+            android:id="@+id/button11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/tvText15"
+
+            android:layout_alignStart="@+id/tvText15"
+            android:layout_below="@+id/tvText15"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ees" />
+
+        <ImageButton
+            android:id="@+id/button12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/tvText18"
+            android:layout_alignStart="@+id/tvText18"
+            android:layout_alignTop="@+id/button11"
+            android:src="@drawable/facts" />
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="24dp"
+            android:layout_height="4dp"
+
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="false"
+            android:src="@drawable/tv" />
+        <ImageButton
+            android:id="@+id/button55"
+            android:layout_width="24dp"
+            android:layout_height="4dp"
+
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="false"
+            android:src="@drawable/tv" />
+
+
+        <ImageButton
+            android:id="@+id/button13"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/tvText9"
+            android:layout_alignStart="@+id/tvText9"
+            android:layout_alignTop="@+id/button12"
+            android:src="@drawable/hat" />
+
+        <ImageButton
+            android:id="@+id/button8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/button5"
+            android:layout_alignStart="@+id/button5"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/kindle" />
+
+
+        <ImageButton
+            android:id="@+id/button28"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/button5"
+            android:layout_alignStart="@+id/button5"
+            android:layout_below="@+id/button11"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/kkk" />
+
+        <ImageButton
+            android:id="@+id/button29"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/button28"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/shop" />
+
+        <ImageButton
+            android:id="@+id/button30"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/tvText1"
+            android:layout_alignTop="@+id/button28"
+            android:src="@drawable/chit" />
+
+        <TextView
+            android:id="@+id/tvText99"
+            android:layout_width="106dp"
+            android:layout_height="20dp"
+
+            android:layout_below="@+id/button28"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Shopping | Shopping"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText11"
+            android:layout_width="106dp"
+            android:layout_height="20dp"
+
+            android:layout_alignStart="@+id/tvText1"
+            android:layout_below="@+id/button28"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Chit Chat | Chit Chat"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/button90"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_alignStart="@+id/button2"
+            android:layout_alignTop="@+id/button91"
+            android:src="@drawable/wwa" />
+
+        <ImageButton
+            android:id="@+id/button91"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/tvText18"
+            android:layout_alignStart="@+id/tvText18"
+            android:layout_alignTop="@+id/button29"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/dott" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/tvText18"
+            android:layout_alignStart="@+id/tvText18"
+            android:layout_alignTop="@+id/button91"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/sandas"
+            android:layout_alignRight="@+id/button91"
+            android:layout_alignEnd="@+id/button91" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/button91"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/bulb"
+            android:layout_alignRight="@+id/tvText7"
+            android:layout_alignEnd="@+id/tvText7" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/button91"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/ra"
+            android:layout_toRightOf="@+id/button"
+            android:layout_toEndOf="@+id/button" />
+
+        <ImageButton
+            android:id="@+id/button92"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/tvText1"
+            android:layout_alignTop="@+id/button90"
+            android:src="@drawable/todo" />
+
+        <TextView
+            android:id="@+id/tvText36"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button91"
+            android:layout_alignLeft="@+id/button91"
+            android:layout_alignRight="@+id/button91"
+            android:layout_alignStart="@+id/button12"
+            android:layout_below="@+id/button91"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="1dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Reset Echo dot | Reset Echo dot "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText41"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button91"
+            android:layout_alignLeft="@+id/button91"
+            android:layout_alignRight="@+id/button91"
+            android:layout_alignStart="@+id/button12"
+            android:layout_below="@+id/imageButton2"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="1dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Super Heros | Super Heros |Super Heros"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText8"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button2"
+            android:layout_below="@+id/button90"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text=" Weather Report | Weather Report "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText40"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton5"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Reading Books | Reading Books"
+            android:textColor="#000000"
+            android:layout_alignRight="@+id/imageButton5"
+            android:layout_alignEnd="@+id/imageButton5" />
+
+        <TextView
+            android:id="@+id/tvText7"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvText1"
+            android:layout_below="@+id/button90"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Todo List | Todo List |Todo List"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvText42"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvText1"
+            android:layout_below="@+id/imageButton6"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Tricks and Tips | Tricks and Tips"
+            android:textColor="#000000" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
